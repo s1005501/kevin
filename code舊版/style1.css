@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+header {
+  background-color: #fcc;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2vh 0;
+}
+
+.menu {
+  max-width: 50px;
+  width: 15%;
+  height: 50px;
+  background-color: #ff0;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 0 0 1vw;
+}
+.menu a {
+  text-decoration: none;
+}
+.logo img {
+  width: 20vh;
+}
+.account img {
+  width: 8vh;
+  margin: 0 1vw 0 0;
+}
+hr {
+  color: #000;
+  width: 80%;
+  opacity: 30%;
+}
+#slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .album {
+  width: 500%;
+}
+#slider .album img {
+  width: 20%;
+  float: left;
+  animation: slidermove 10s infinite;
+  margin: 0 0 2vh 0;
+}
+@keyframes slidermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100%, 0);
+  }
+  45% {
+    transform: translate(-100%, 0);
+  }
+  50% {
+    transform: translate(-200%, 0);
+  }
+  70% {
+    transform: translate(-200%, 0);
+  }
+  75% {
+    transform: translate(-300%, 0);
+  }
+  95% {
+    transform: translate(-300%, 0);
+  }
+  100% {
+    transform: translate(-400%, 0);
+  }
+}
+
+main {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main section {
+  background-color: #ffc;
+
+  margin: 5px;
+  display: block;
+  padding: 5px;
+}
+h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 5px;
+
+  font-weight: bold;
+}
+.news-content h3 {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.booking > div {
+  width: 80%;
+  height: 5vh;
+  /* background-color: #cff; */
+  margin: 7px;
+  border: 1px solid #000;
+}
+
+.nav button {
+  width: 50px;
+  height: 4vh;
+  /* background-color: #cff; */
+  margin: 50px 0 0 0;
+  border: 1px solid #000;
+  display: block;
+  margin: 0 auto;
+}
+.news {
+  width: 100%;
+}
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin: 5px;
+  font-weight: bold;
+}
+.news-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.news-inside {
+  border: 1px solid #000;
+  width: 400px;
+  max-width: 95%;
+  margin: 10px;
+}
+.news-text {
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.top-line,
+.middle-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 64px;
+  font-size: 12px;
+}
+
+.top-line div,
+.middle-line div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-line img,
+.middle-line img {
+  width: 32px;
+  height: 32px;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #ccf;
+}
+
+@media screen and (max-width: 576px) {
+  #slider {
+    display: none;
+  }
+  .hr2 {
+    appearance: none;
+  }
+
+  .news-content {
+    display: block;
+  }
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 500vh;
+}
+hr {
+  width: 80%;
+  opacity: 50%;
+}
+header {
+  width: 100%;
+  height: 20vh;
+  /* background-color: #cfc; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2vh 0;
+}
+
+.menu {
+  max-width: 50px;
+  width: 15%;
+
+  height: 50px;
+  /* background-color: #ff0; */
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+.menu a {
+  text-decoration: none;
+}
+.logo img {
+  width: 25vh;
+}
+.account img {
+  width: 8vh;
+}
+main {
+  width: 100%;
+}
+
+#slider {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .album {
+  width: 500%;
+}
+#slider .album img {
+  width: 20%;
+  float: left;
+  animation: slidermove 10s infinite;
+  margin: 0 0 2vh 0;
+}
+@keyframes slidermove {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100%, 0);
+  }
+  45% {
+    transform: translate(-100%, 0);
+  }
+  50% {
+    transform: translate(-200%, 0);
+  }
+  70% {
+    transform: translate(-200%, 0);
+  }
+  75% {
+    transform: translate(-300%, 0);
+  }
+  95% {
+    transform: translate(-300%, 0);
+  }
+  100% {
+    transform: translate(-400%, 0);
+  }
+}
+
+nav {
+  width: 100%;
+  /* background-color: #fcc; */
+}
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.booking {
+  width: 100%;
+  height: 45vh;
+  /* background-color: #ffc; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.booking > div {
+  width: 80%;
+  height: 8vh;
+  /* background-color: #cff; */
+  margin: 4px;
+  border: 1px solid #000;
+}
+
+.booking p {
+  width: 30%;
+  height: 6vh;
+  /* background-color: #cff; */
+  margin: 4px;
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 576px) {
+  #slider {
+    display: none;
+  }
+}
